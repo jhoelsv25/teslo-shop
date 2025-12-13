@@ -27,8 +27,20 @@ export function ProductGridItem({ product }: Props) {
           height={500}
         />
         <div className=" p-4 flex flex-col">
-          <h3 className="text-sm font-semibold mb-2 group-hover:underline group-hover:text-foreground">{product.title}</h3>
-          <span className="text-xl font-bold">${product.price.toFixed(2)}</span>
+          <h3 className="text-sm font-semibold mb-2 group-hover:underline  group-hover:text-green-500">
+            {product.title}
+          </h3>
+          <button 
+          onClick={(e) => {
+            e.preventDefault();
+            // Aquí podrías agregar la lógica para añadir el producto al carrito
+            alert(`Añadido ${product.title} al carrito`);
+          }}
+          className="mt-auto self-start bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors w-full cursor-pointer">
+            <span className="text-xl font-bold">
+              ${product.price.toFixed(2)}
+            </span>
+          </button>
         </div>
       </div>
     </Link>
