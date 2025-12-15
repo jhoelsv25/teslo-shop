@@ -50,9 +50,7 @@ export function QuantitySelector({ quantity }: Props) {
         disabled={isOutOfStock}
         onChange={handleInputChange}
       />
-      <small className={isOutOfStock ? "text-red-500" : ""}>
-        {isOutOfStock ? "sin stock" : `de ${quantity}`}
-      </small>
+   
       <button
         onClick={handleAddQuantity}
         disabled={currentQuantity >= max || isOutOfStock}
