@@ -13,7 +13,7 @@ export function ProductGridItem({ product }: Props) {
   const [image, setImage] = useState(product.images[0]);
   return (
     <Link
-      href={`/products/${product.slug}`}
+      href={`/product/${product.slug}`}
       className="group block"
       onMouseEnter={() => setImage(product.images[1] || product.images[0])}
       onMouseLeave={() => setImage(product.images[0])}

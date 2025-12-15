@@ -20,7 +20,7 @@ export function Header() {
         <Link href="/category/women" className="text-lg hover:text-green-500">
           Mujeres
         </Link>
-        <Link href="/category/kids" className="text-lg hover:text-green-500">
+        <Link href="/category/kid" className="text-lg hover:text-green-500">
           Niños
         </Link>
       </div>
